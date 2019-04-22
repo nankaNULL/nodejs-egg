@@ -7,8 +7,8 @@ class NewsController extends Controller {
     const dataList = {
       list: newsList
     };
-    console.log(newsList)
-    
+    // this.logger.info(newsList);
+    // this.logger.info(this.ctx.request)
     await this.ctx.render('news/list.tpl', dataList);
   }
 }

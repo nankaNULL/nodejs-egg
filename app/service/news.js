@@ -8,7 +8,8 @@ class NewsService extends Service {
         timeout: 3000
     })
     const { status, headers, data: {maintainers} } = result;
-
+    // this.logger.info(this.ctx.query)
+    this.logger.info(this.ctx.request.body)
     return maintainers;
   }
 }
